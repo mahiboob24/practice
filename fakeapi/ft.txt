@@ -1,0 +1,33 @@
+hello world
+
+
+
+
+
+
+
+
+
+let name1={
+    fname:'mahiboob',
+    lname:'k'
+}
+let name2={
+    fname:'suman',
+    lname:'s'
+}
+
+let fullname=function (city){
+    console.log(this.fname+' '+this.lname+' from '+city)
+}
+
+
+fullname.call(name1,'mysure')
+
+
+fullname.apply(name2,['banglore'])
+
+let printname=fullname.bind(name1,'mysure')
+
+
+printname()

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src="array.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+
+  <ul>
+    <li> <a href="https://www.google.com/"> Home </a></li>
+    <li> <a href="https://www.google.com/"> About </a></li>
+    <li> <a href="https://www.google.com/"> Contact </a></li>
+    <li> <a href="https://www.google.com/"> Login </a></li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+    <div className="container d-flex justify-content-center vh-100  align-items-center">
+        <div className="row w-25">
+
+            <div className="col">
+                <div className="card bg-dark text-white shadow border-rounded">
+
+                    <div className="card-body">
+                        <h2 className="text-center">login </h2>
+                       
+                        <form action="">
+                            <input type="email" placeholder="Username" className="form-control my-4 py-3">
+                            <input type="password" placeholder="password" className="form-control mb-2 py-3">
+                            <div className="float-end"> 
+
+                                <span><a href="">forgot password?</a>
+                                </span>
+                            </div>
+                        </form>
+                
+                    </div>
+                    <div className="text-center mb-2 ">
+                        <button className="btn-primary btn  btn-lg" type="submit">login</button>
+                    </div>
+                    <div className="text-center mb-3">
+                        Don't have account?
+                        <a href="">Rigister here</a>
+                    </div>
+                   
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div> 
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+
+  <!-- Modal -->
+  <!-- <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal-dialog modal-md">
+      <div className="modal-content">
+        <div className="modal-header">
+         
+          <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div className="modal-body">
+            <h5 className="modal-title text-center" id="exampleModalLabel">Add plan</h5>
+            <form >
+                <div className="row gy-3">
+                    <div className="col-6">
+                      <label for="">plan name</label>
+                      <input type="text" className="form-control">
+                    </div>
+                    <div className="col-6">
+                        <label for="">plan dd</label>
+                        <input type="text" className="form-control">
+                    </div>
+                    <div className="col-6">
+                        <label for="">no of user</label>
+                        <select id="inputState" className="form-select">
+                            <option selected></option>
+                            <option>...</option>
+                          </select>
+                    </div>
+                    <div className="col-6">
+                        <label for="">user type</label>
+                        <select id="inputState" className="form-select">
+                            <option selected></option>
+                            <option>...</option>
+                          </select>
+                    </div>
+                    <div className="col-6">
+                        <label for="">no user</label>
+                        <select id="inputState" className="form-select">
+                            <option selected></option>
+                            <option>...</option>
+                          </select>
+                    </div>
+                    <div className="col-6">
+                        <label for="">storage</label>
+                        <select id="inputState" className="form-select">
+                            <option selected></option>
+                            <option>...</option>
+                          </select>
+                    </div>
+                   
+                    
+                  </div>
+                <div className="col-12 mt-4">
+                    <div className="form-check form-switch">
+                        <label className="form-check-label" for="flexSwitchCheckDefault"> checkbox </label>
+                        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      </div>
+                </div>
+                
+              </form>
+        </div>
+        <div className="text-center mb-4">
+            <button type="button" className="btn btn-danger btn-lg w-50 rounded-pill" data-bs-dismiss="modal">submit</button>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-8 border border-primary">
+        <div class="d-flex justify-content-between mt-5">
+          <div class="c1 border border-primary" style="height: 100px;"> <i>icon</i> this is a child1</div>
+          <div class="c1 border shadow-lg border-primary" style="height: 100px;"><div class="rounded-circle border border-primary" style="width: 100px;height: 100px;"></div>
+
+            child2</div>
+        </div>
+      </div>
+      <div class="col-4 border border-danger" style="height: 200px; ">
+        <div class="d-flex justify-content-between mt-5">
+          <div class="c1 border border-primary" style="height: 100px;">child1</div>
+          <div class="c1 border border-primary" style="height: 100px;">child2</div>
+        </div>
+<div class="text-center"> projects</div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

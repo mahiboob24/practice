@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center mt-5  align-items-center">
+        <div class="row ">
+
+            <div class="col">
+                <div class="card bg-dark text-white shadow border-rounded">
+                    <div class="card-body">
+                        <h2 class="text-center">login </h2>
+                        <form action="">
+                            <input type="email" placeholder="Username" class="form-control my-4 py-3"  id="v1">
+                            <input type="password" placeholder="password" class="form-control mb-2 py-3" id="v2">
+                            <div class="float-end"> 
+                                <span><a href="">forgot password?</a>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-center mb-2 ">
+                        <button class="btn-primary btn  btn-lg" onclick="getadd()" type="submit">login</button>
+                    </div>
+                    <div class="text-center mb-3">
+                        Don't have account?
+                        <a href="">Rigister here</a>
+                    </div>
+                   
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+ 
+<p id="res" class="text-center fs-4"></p>
+
+
+<script>
+  function  getadd(){
+        let n1=document.getElementById('v1').value
+        let n2=document.getElementById('v2').value
+        alert( document.getElementById('res').innerHTML='username:'+ n1 +'  '+'password:'+ n2)
+        document.getElementById('res').innerHTML='username:'+ n1 +'<br>'+'password:'+ n2
+        
+
+        console.log("username:" + n1)
+        console.log("password:" + n2)
+    }
+
+    </script>
+</body>
+
+
+
+
+
+
+</html>
